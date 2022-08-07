@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Login | Fleeso</title>
+</head>
+<body>
+
+<div class="login-container">
+    <div class="container-aside">
+        <div class="aside-title">FLEESO</div>
+        <div class="aside-header-lg">Start your journey with us.</div>
+        <div class="aside-header-sm"> Discover the world's best community of freelancers and business owners.</div>
+
+
+        <div class="testmonials">
+            <div class="testmonial">
+                <div class="testmonial-text">Simply unbelievable! I am really satisfied with my projects and business. This is Absolutely wonderful!</div>
+
+                <div class="testmonial-user">
+                    <div class="user-image">
+                        <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image">
+                    </div>
+                    <div class="user-info">
+                        <div class="user-name">James K</div>
+                        <div class="user-title">Freelancer</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dots">
+                <div class="circle active"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container-main">
+        <div class="main-title-lg"> Sign up </div>
+        <div class="main-title-sm">Have an account? <a href="#">Log in</a> </div>
+
+
+        <div class="form">
+
+            <div class="form-group">
+                <div class="label">Looking for?</div>
+
+                <label for="projects" id="projectsLabel" class="customInputLabel labelActive">
+                    <input onchange="customSelect(event)" type="radio" id="projects" name="lookfor" class="customInput" checked> &nbsp;&nbsp; Projects
+                </label>
+
+
+                <label for="designs" id="designsLabel" class="customInputLabel">
+                    <input onchange="customSelect(event)" type="radio" id="designs" name="lookfor" class="customInput">  &nbsp;&nbsp; Designs
+                </label>
+
+
+            </div>
+
+
+
+
+            <div class="form-group">
+                <div class="label">Email</div>
+                <input type="email" class="formInput" placeholder="youremail@mailer.com">
+            </div>
+
+
+
+            <div class="form-group">
+                <div class="label">Password</div>
+                <input type="password" class="formInput" placeholder="Choose password">
+            </div>
+
+
+            <div class="form-group">
+                <div class="label">Select Skills</div>
+                <div class="customSelect">
+                    <input type="text" class="formInput" placeholder="Select Skills" onkeyup="searchItem(event)" onkeydown="searchItem(event)" id="selectInput">
+
+                    <div class="classItems" id="skillsItem">
+                        <div class="classitem" onclick="selectItem(event)">Branding</div>
+                        <div class="classitem" onclick="selectItem(event)">Illustration</div>
+                        <div class="classitem" onclick="selectItem(event)">Photography</div>
+                        <div class="classitem" onclick="selectItem(event)">Programming</div>
+                        <div class="classitem" onclick="selectItem(event)">Gaming</div>
+                    </div>
+                </div>
+
+                <div id="selectedItem"></div>
+            </div>
+
+            <div class="form-group">
+                <button class="btn">Create account</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>

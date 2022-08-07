@@ -1,0 +1,226 @@
+/* Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* clear default formats */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    background-color: #3C37FF;
+}
+
+.login-container {
+    background: #FFF;
+    width:70vw;
+    height: 90vh;
+    margin: 0px auto;
+    margin-top: 5vh;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 270px auto;
+    gap: 50px;
+}
+
+
+
+.container-aside {
+    color: #FFF;
+    background: #3e37ffcc;
+    height: 100%;
+    padding: 32px;
+    position: relative;
+}
+
+.aside-header-lg {
+    margin-top: 30px;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+
+.aside-header-sm {
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+
+.testmonials {
+    position: absolute;
+    bottom: 32px;
+    margin-right: 32px;
+}
+
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.circle {
+    width: 5px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.425);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active {
+    background-color: rgb(255, 255, 255);
+}
+
+.testmonial {
+    background: #3C37FF;
+    padding: 16px;
+    color: rgba(255, 255, 255, 0.849);
+    border-radius: 4px;
+}
+
+
+.testmonial-user {
+    display: grid;
+    grid-template-columns: 50px auto;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.user-image {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    background-color: #FFF;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+
+.user-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.user-title {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.733);
+}
+
+
+.main-title-lg {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.616);
+}
+
+.main-title-sm {
+    padding-top: 5px;
+}
+
+
+.customInputLabel {
+    margin-right: 40px;
+    border: 2px solid #3e37ff46;
+    display: inline-block;
+    padding: 10px;
+    width: 200px;
+    border-radius: 4px;
+}
+
+
+.form {
+    margin-top: 20px;
+}
+
+
+.form-group {
+    margin-bottom: 20px;;
+}
+
+
+.form-group .label {
+    margin-bottom: 5px;
+    color: rgba(0, 0, 0, 0.418);
+}
+
+
+.formInput {
+    border: 2px solid rgba(0, 0, 0, 0.247);
+    width: 100%;
+    padding:10px;
+    border-radius: 4px;
+    outline: 0px solid black;
+}
+
+
+.formInput:focus {
+    border: 2px solid #3C37FF;
+}
+
+
+.labelActive {
+    background-color: #3e37ff15;
+    border: 2px solid #3e37ff;
+}
+
+
+.btn {
+    padding: 10px;
+    background: #3e37ffbb;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    background: #3C37FF;
+}
+
+
+.customSelect {
+    position: relative;
+}
+
+
+.classItems {
+    position: absolute;
+    width: 100%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.103);
+}
+
+.classitem {
+    background: #FFF;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding: 7px;
+    color: rgba(0, 0, 0, 0.432);
+    cursor: pointer;
+    display: none;
+}
+
+
+.classitem:hover {
+    color: rgba(0, 0, 0, 0.719);
+    background-color: #eee;
+}
+
+#selectedItem span{
+    display: inline-block;
+    background: #ddd;
+    padding: 5px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+
+#selectedItem {
+    padding-top: 10px;
+    cursor: pointer;
+}
